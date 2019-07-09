@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Order Details</title>
+	<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/inbox.css">
+</head>
+<body>
+	
+
+<div class="rolodex-menu">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="wrapper">
+					<div class="search">
+						<form>
+							<div class="form-group">
+						       	<input type="text" class="form-control" placeholder="Find Services">
+						       	<i class="glyphicon glyphicon-search"></i>
+						    </div>
+						</form>
+					</div>
+					<a class="logo" href="">
+						<img src="images/header-logo.png" alt="" class="img-responsive logo">
+					</a>
+					<div class="hamburger-menu">
+						<i onclick="openNav()" class="openBtn glyphicon glyphicon-menu-hamburger"></i>
+					</div>
+				</div>
+				<div class="sidenav" id="sidenav">
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="avatar">
+					<a href="#">
+						<div class="user-photo">
+							<img src="images/user-pic.png" alt="" class="img-responsive img-circle">
+						</div>
+						<div class="user-name">
+							<p class="name"> W2 Daemon</p>
+						</div>
+						<div class="user-bar">
+							<span class="badge"> 0</span>
+							<div class="level-bar">
+								<span class="level-points"> 10</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="messages">
+					<div class="dropdown">
+						<a href="#" class="inbox dropbtn">
+							<i class="glyphicon glyphicon-envelope"></i>
+						</a>
+						
+						<div class="dropdown-content" id="myDropdown rolodex-notification" aria-labelledby="dLabel">
+						    <div class="tip"></div>
+						    	<div class="tabs-wrapper">
+						    		<ul class="nav nav-tabs notification-tab" role="tablist" id="notificationTabs">
+										<li role="presentation" class="active">
+										  	<a href="#notification" aria-controls="notification" role="tab" data-toggle="tab">
+										   		<i class="glyphicon glyphicon-bullhorn"></i>
+										    		Notifcation 
+										    		<span class="notification-number">(0)</span>
+										   	</a>
+										</li>
+										<li role="presentation">
+										   	<a href="#inbox" aria-controls="inbox" role="tab" data-toggle="tab">
+										   		<i class="glyphicon glyphicon-comment"></i>
+										    		Inbox 
+										    		<span class="mail-number">(0)</span>
+											</a>
+										</li>
+									</ul>
+										
+									<div class="tab-content">
+										<div role="tabpanel" class="tab-pane active" id="notification">
+											<div class="scroll-wrapper">
+												<div class="tab-wrapper">
+												   	<ul class="notification-list">
+														<li class="notification-item">
+											    			<a href="" class="notifications-link">
+											    				<div class="user-avatar">
+											    					<img src="images/user-pic.png" alt="" class="img-responsive img-circle img-thumbnail">
+											    				</div>
+											    				<div class="text-wrapper">
+											    					<p class="first">
+											    						<span class="user-name">
+											    							<b>W2Daemon</b>
+											    						</span> 
+											    						<span class="message-text">some message here some message here some message here</span>
+											    					</p>
+											    					<p class="second">
+											    						<span class="time"> 3 days ago</span>
+											    						<span class="dot">  .</span>
+											    						<span class="category"> Web Design</span>
+											    						<span class="dot">  .</span>
+											    						<i class="glyphicon glyphicon-circle-arrow-right"></i></p>
+											    				</div>
+											    				<div class="right-wrapper">
+											    					<i class="glyphicon glyphicon-envelope"></i>
+											    					<img src="images/small-img.jpg" alt="" class="img-responsive">
+											    				</div>
+											    			</a>
+											    		</li>
+											    		<li class="notification-item">
+											    			<a href="" class="notifications-link unread">
+											    				<div class="user-avatar">
+											    					<img src="images/user-pic.png" alt="" class="img-responsive img-circle img-thumbnail">
+											    				</div>
+											    				<div class="text-wrapper">
+											    					<p class="first">
+											    						<span class="user-name">
+											    							<b>W2Daemon</b>
+											    						</span> 
+											    						<span class="message-text">some message here some message here</span>
+											    					</p>
+											    					<p class="second">
+												    						<span class="time"> 3 days ago</span>
+										    						<span class="dot"> .</span>
+											    						<span class="category"> Web Design</span>
+											    						<span class="dot"> .</span>
+											    						<i class="glyphicon glyphicon-circle-arrow-right"></i></p>
+											    				</div>
+											    				<div class="right-wrapper">
+											    					<i class="glyphicon glyphicon-envelope"></i>
+												    					<img src="images/small-img.jpg" alt="" class="img-responsive">
+											    				</div>
+											    			</a>
+											    		</li>
+											    	</ul>
+											    </div>
+									    	</div>
+									    	<div class="tab-footer">
+									    		<a href="" class="view-all"> See All Notifications</a>
+										    </div>
+										</div>
+										<div role="tabpanel" class="tab-pane " id="inbox">
+											<div class="scroll-wrapper">
+												<div class="tab-wrapper">
+											    	<ul class="inbox-list">
+											    		<li class="inbox-item">
+											    			<a href="" class="inbox-link">
+											    				<div class="sender-avatar">
+											    					<img src="images/user-pic.png" alt="" class="img-responsive img-circle img-thumbnail">
+											    				</div>
+											    				<div class="text-wrapper">
+											    					<p class="sender-name">
+											    						<b>W2Daemon</b>
+											    					</p>
+											    					<p class="message-text">highlight message here ...</p>
+											    					<p class="time">3 days ago</p>
+											    				</div>
+											    			</a>
+											    		</li>
+											    		<li class="inbox-item">
+											    			<a href="" class="inbox-link unread">
+											    				<div class="sender-avatar">
+											    					<img src="images/user-pic.png" alt="" class="img-responsive img-circle img-thumbnail">
+											    				</div>
+											    				<div class="text-wrapper">
+											    					<p class="sender-name">
+											    						<b>W2Daemon</b>
+											    					</p>
+											    					<p class="message-text">highlight message here ...</p>
+											    					<p class="time">3 days ago</p>
+											    				</div>
+											    			</a>
+											    		</li>
+											    	</ul>
+											    </div>
+											</div>
+											<div class="tab-footer">
+												<a href="" class="view-all"> See All in Inbox</a>
+											</div>
+										</div>
+									</div>
+								</div>
+					    </div>
+					</div>
+				</div>
+				<div class="mobile-icons">
+					<a href="#" class="inbox">
+						<i class="glyphicon glyphicon-envelope"></i>
+					</a>
+					<a href="#" class="notification">
+						<i class="glyphicon glyphicon-bell"></i>
+					</a>
+				</div>
+				<button class="btn btn-primary"> Create New Service</button>
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+   
+</body>
+</html>
